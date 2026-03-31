@@ -1,0 +1,30 @@
+---
+title: "Presentations"
+---
+
+전북대학교 통계학과 최규빈 교수의 발표자료 목록을 정리한 페이지입니다. (링크를 클릭하면 발표자료를 볼 수 있습니다.)
+
+::: {.panel-tabset}
+
+## 연구
+
+- [gglite: A Lightweight and Intuitive R Package for Extending Graphic Grammar](https://miruetoto.github.io/gglite260110), 다중척도방법론 워크샵, Seoul National University Siheung Campus, January 2026.
+- [Elastic-Band Transform–Integrated Spatio-Temporal Graph Neural Networks for Solar Radiation Forecasting](https://miruetoto.github.io/ebtsolar260108), 다중척도방법론 워크샵, Seoul National University Siheung Campus, January 2026.
+- Multiscale Methodology for Graph Signals, The Korean Statistical Society Conference, Korea University, November 2021.
+- Heavy-Snow Transform: A New Multiscale Method for Time Series, The 5th Institute of Mathematical Statistics Asia Pacific Rim Meeting, National University of Singapore, June 2018.
+- Elastic-Band Transform: A New Approach to Multiscale Visualization, Joint Meeting of 10th Asian Regional Section (ARS) of the International Association for Statistical Computing (IASC) and the NZ Statistical Association (NZSA), The University of Auckland, December 2017.
+- Modified Variational Mode Decomposition using Ebayesthresh, The 4th Institute of Mathematical Statistics Asia Pacific Rim Meeting, The Chinese University of Hong Kong, June 2016.
+- Modification of VMD for Handling Missing Data, The Korean Statistical Society Conference, Chungbuk National University, August 2015.
+
+## 특강&세미나
+
+- [통계 연구자를 위한 에이전틱 AI 활용법](https://miruetoto.github.io/cnu-260330), 충남대학교 DS세미나, 2026-03-30.
+- [통계 연구자를 위한 에이전틱 AI 활용법](https://miruetoto.github.io/agentic-260224/), 다중척도연구실 세미나, 2026-02-24.
+- [ChatGPT시대의 코딩공부](https://miruetoto.github.io/JBIG-20251201), JBIG 세미나, 2025-12-01.
+- [ChatGPT를 이용한 파이썬 실무](https://guebin.github.io/rda251022/1022.html), 농촌진흥청, 2025-10-22.
+- [AI 기반 데이터 사이언스](https://guebin.github.io/rda250723/qslides.html), 농촌진흥청, 2025-07-23.
+- [Exploring Multiscale Methods](https://guebin.github.io/unist0611/ppt.html), UNIST 인공지능대학원 세미나, 2025-06-11.
+
+## 기타강의
+
+:::

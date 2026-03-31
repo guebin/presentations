@@ -1,0 +1,14 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Presentations"
+  description: "발표자료 아카이브"
+  page-footer:
+    center: "© Guebin Choi"
+
+format:
+  html:
+    theme: cosmo
+    toc: false
