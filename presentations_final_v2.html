@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Presentations</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    max-width: 860px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f7f7f8;
+    color: #1f1f1f;
+    line-height: 1.5;
+  }
+  h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .tabs {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 24px;
+  }
+  .tab {
+    padding: 8px 4px;
+    font-size: 14px;
+    color: #2b7ad4;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .tab.active {
+    color: #1f1f1f;
+    font-weight: 600;
+    border-bottom: 2px solid #1f1f1f;
+    margin-bottom: -1px;
+  }
+  .year-header {
+    font-size: 20px;
+    font-weight: 600;
+    color: #555;
+    margin: 32px 0 14px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ddd;
+  }
+  .year-header:first-of-type {
+    margin-top: 8px;
+  }
+  .card {
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 12px;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+  }
+  .card:hover {
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    transform: translateY(-1px);
+  }
+  .card-title {
+    font-size: 15.5px;
+    font-weight: 600;
+    color: #0b5394;
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+  .card-meta {
+    font-size: 13.5px;
+    color: #555;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+  }
+  .card-meta .sep {
+    color: #bbb;
+  }
+  .authors {
+    font-size: 13px;
+    color: #777;
+    font-style: italic;
+    margin-bottom: 6px;
+  }
+  /* slides 뱃지 - 링크 역할 */
+  a.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11.5px;
+    padding: 3px 10px;
+    border-radius: 10px;
+    background: #eef3fb;
+    color: #1a5490;
+    font-weight: 500;
+    margin-left: 8px;
+    vertical-align: middle;
+    text-decoration: none;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  a.tag:hover {
+    background: #1a5490;
+    color: white;
+  }
+  a.tag svg {
+    width: 11px;
+    height: 11px;
+    fill: currentColor;
+  }
+</style>
+</head>
+<body>
+
+<h1>Presentations</h1>
+<div class="subtitle">전북대학교 통계학과 최규빈 교수의 발표자료 목록을 정리한 페이지입니다.</div>
+
+<div class="tabs">
+  <span class="tab active">학술발표</span>
+  <span class="tab">특강&amp;세미나</span>
+  <span class="tab">기타</span>
+</div>
+
+<div class="year-header">2026</div>
+
+<div class="card">
+  <div class="card-title">
+    gglite: A Lightweight and Intuitive R Package for Extending Graphic Grammar
+    <a href="https://example.com/gglite-slides" class="tag" target="_blank" rel="noopener">
+      <svg viewBox="0 0 16 16"><path d="M2 3h12v8H2V3zm1 1v6h10V4H3zm4 8h2v1h3v1H4v-1h3v-1z"/></svg>
+      slides
+    </a>
+  </div>
+  <div class="card-meta">
+    <span>Workshop on Multiscale Methods</span>
+    <span class="sep">·</span>
+    <span>SNU Siheung Campus</span>
+    <span class="sep">·</span>
+    <span>Jan 2026</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">
+    Elastic-Band Transform–Integrated Spatio-Temporal Graph Neural Networks for Solar Radiation Forecasting
+    <a href="https://example.com/ebt-solar-slides" class="tag" target="_blank" rel="noopener">
+      <svg viewBox="0 0 16 16"><path d="M2 3h12v8H2V3zm1 1v6h10V4H3zm4 8h2v1h3v1H4v-1h3v-1z"/></svg>
+      slides
+    </a>
+  </div>
+  <div class="card-meta">
+    <span>Workshop on Multiscale Methods</span>
+    <span class="sep">·</span>
+    <span>SNU Siheung Campus</span>
+    <span class="sep">·</span>
+    <span>Jan 2026</span>
+  </div>
+</div>
+
+<div class="year-header">2025</div>
+
+<div class="card">
+  <div class="card-title">
+    Heavy-snow transform-based visualization and importance measure in the Seoul subway network
+  </div>
+  <div class="authors">with Y. Kim and J. Kim</div>
+  <div class="card-meta">
+    <span>Korean Data Analysis Society Summer Conference</span>
+    <span class="sep">·</span>
+    <span>Konkuk University</span>
+    <span class="sep">·</span>
+    <span>Jul 2025</span>
+  </div>
+</div>
+
+<div class="year-header">2023</div>
+
+<div class="card">
+  <div class="card-title">
+    Graph Neural Network-based Anomaly Detection System
+  </div>
+  <div class="authors">with B. Kim</div>
+  <div class="card-meta">
+    <span>Korean Statistical Society Winter Conference</span>
+    <span class="sep">·</span>
+    <span>Sungshin Women's University</span>
+    <span class="sep">·</span>
+    <span>Dec 2023</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">
+    Capturing Solar Radiation Patterns with Advanced Neural Networks
+  </div>
+  <div class="authors">with J. Lim, H. Jung, D. Im, J. Kim, and J. Hwang</div>
+  <div class="card-meta">
+    <span>Korean Institute of Industrial Engineers Fall Conference</span>
+    <span class="sep">·</span>
+    <span>Nov 2023</span>
+  </div>
+</div>
+
+<div class="year-header">2022</div>
+
+<div class="card">
+  <div class="card-title">
+    Anomaly Detection Method in Non-Euclidean Data using Empirical Bayes Threshold
+  </div>
+  <div class="authors">with S. Choi</div>
+  <div class="card-meta">
+    <span>Korean Statistical Society Winter Conference</span>
+    <span class="sep">·</span>
+    <span>Jeju National University</span>
+    <span class="sep">·</span>
+    <span>Dec 2022</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">
+    Hierarchical-CAM: CAM-based Hierarchical Visualization for Image Data
+  </div>
+  <div class="authors">with H. Kim</div>
+  <div class="card-meta">
+    <span>Korean Statistical Society Summer Conference</span>
+    <span class="sep">·</span>
+    <span>Seoul National University</span>
+    <span class="sep">·</span>
+    <span>Jun 2022</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">
+    Visualization of issue sensitivity based on the results of the election for the head of a regional organization in Korea
+  </div>
+  <div class="authors">with T. Lee and H. Oh</div>
+  <div class="card-meta">
+    <span>Korean Data &amp; Information Science Society Spring Conference</span>
+    <span class="sep">·</span>
+    <span>Pusan National University</span>
+    <span class="sep">·</span>
+    <span>May 2022</span>
+  </div>
+</div>
+
+<div class="year-header">2021</div>
+
+<div class="card">
+  <div class="card-title">
+    Multiscale Methodology for Graph Signals
+  </div>
+  <div class="card-meta">
+    <span>Korean Statistical Society Conference</span>
+    <span class="sep">·</span>
+    <span>Korea University</span>
+    <span class="sep">·</span>
+    <span>Nov 2021</span>
+  </div>
+</div>
+
+<div class="year-header">2018</div>
+
+<div class="card">
+  <div class="card-title">
+    Heavy-Snow Transform: A New Multiscale Method for Time Series
+  </div>
+  <div class="card-meta">
+    <span>5th IMS Asia Pacific Rim Meeting</span>
+    <span class="sep">·</span>
+    <span>National University of Singapore</span>
+    <span class="sep">·</span>
+    <span>Jun 2018</span>
+  </div>
+</div>
+
+<div class="year-header">2017</div>
+
+<div class="card">
+  <div class="card-title">
+    Elastic-Band Transform: A New Approach to Multiscale Visualization
+  </div>
+  <div class="card-meta">
+    <span>Joint Meeting of 10th IASC-ARS and NZSA</span>
+    <span class="sep">·</span>
+    <span>The University of Auckland</span>
+    <span class="sep">·</span>
+    <span>Dec 2017</span>
+  </div>
+</div>
+
+<div class="year-header">2016</div>
+
+<div class="card">
+  <div class="card-title">
+    Modified Variational Mode Decomposition using Ebayesthresh
+  </div>
+  <div class="card-meta">
+    <span>4th IMS Asia Pacific Rim Meeting</span>
+    <span class="sep">·</span>
+    <span>The Chinese University of Hong Kong</span>
+    <span class="sep">·</span>
+    <span>Jun 2016</span>
+  </div>
+</div>
+
+<div class="year-header">2015</div>
+
+<div class="card">
+  <div class="card-title">
+    Modification of VMD for Handling Missing Data
+  </div>
+  <div class="card-meta">
+    <span>Korean Statistical Society Conference</span>
+    <span class="sep">·</span>
+    <span>Chungbuk National University</span>
+    <span class="sep">·</span>
+    <span>Aug 2015</span>
+  </div>
+</div>
+
+</body>
+</html>

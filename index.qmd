@@ -2,35 +2,130 @@
 title: "Presentations"
 ---
 
-전북대학교 통계학과 최규빈 교수의 발표자료 목록을 정리한 페이지입니다. 
+```{=html}
+<style>
+  .year-header {
+    font-weight: 600;
+    color: #555;
+    margin: 20px 0 10px 0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .year-header:first-of-type {
+    margin-top: 4px;
+  }
+  .card {
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    transition: box-shadow 0.15s ease;
+  }
+  .card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .card-title {
+    font-weight: 600;
+    color: #0b5394;
+    margin-bottom: 4px;
+    line-height: 1.4;
+  }
+  .card-meta {
+    color: #666;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+  }
+  .card-meta .sep { color: #bbb; }
+  .authors {
+    color: #888;
+    font-style: italic;
+    margin-bottom: 3px;
+  }
+  a.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.8em;
+    padding: 2px 9px;
+    border-radius: 10px;
+    background: #eef3fb;
+    color: #1a5490;
+    font-weight: 500;
+    margin-left: 8px;
+    vertical-align: middle;
+    text-decoration: none;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  a.tag:hover { background: #1a5490; color: white; }
+  a.tag svg { width: 0.85em; height: 0.85em; fill: currentColor; }
+</style>
+```
+
+```{r}
+#| echo: false
+#| message: false
+library(yaml)
+library(htmltools)
+
+data <- read_yaml("presentations.yml")
+
+slides_svg <- '<svg viewBox="0 0 16 16"><path d="M2 3h12v8H2V3zm1 1v6h10V4H3zm4 8h2v1h3v1H4v-1h3v-1z"/></svg>'
+
+esc <- function(x) if (is.null(x)) "" else htmlEscape(x)
+
+render_card <- function(item) {
+  tag <- if (!is.null(item$url))
+    sprintf('<a href="%s" class="tag" target="_blank" rel="noopener">%s slides</a>',
+            item$url, slides_svg) else ""
+
+  authors <- if (!is.null(item$authors))
+    sprintf('<div class="authors">with %s</div>', esc(item$authors)) else ""
+
+  parts <- c()
+  if (!is.null(item$venue))    parts <- c(parts, sprintf('<span>%s</span>', esc(item$venue)))
+  if (!is.null(item$location)) parts <- c(parts, sprintf('<span>%s</span>', esc(item$location)))
+  if (!is.null(item$date))     parts <- c(parts, sprintf('<span>%s</span>', esc(item$date)))
+  meta <- paste(parts, collapse = '<span class="sep">·</span>')
+
+  sprintf(
+    '<div class="card"><div class="card-title">%s %s</div>%s<div class="card-meta">%s</div></div>',
+    esc(item$title), tag, authors, meta
+  )
+}
+
+render_section <- function(items) {
+  if (length(items) == 0) return(invisible())
+  years <- sapply(items, function(x) x$year)
+  ord <- order(years, decreasing = TRUE)
+  items <- items[ord]; years <- years[ord]
+
+  out <- c()
+  for (y in unique(years)) {
+    out <- c(out, sprintf('<div class="year-header">%d</div>', y))
+    for (it in items[years == y]) out <- c(out, render_card(it))
+  }
+  cat(paste(out, collapse = "\n"))
+}
+```
 
 ::: {.panel-tabset}
 
-## 연구
+## Research
 
-- [gglite: A Lightweight and Intuitive R Package for Extending Graphic Grammar](https://miruetoto.github.io/gglite260110), Multiscale Methodology Workshop, Seoul National University Siheung Campus, January 2026.
-- [Elastic-Band Transform–Integrated Spatio-Temporal Graph Neural Networks for Solar Radiation Forecasting](https://miruetoto.github.io/ebtsolar260108), Multiscale Methodology Workshop, Seoul National University Siheung Campus, January 2026.
-- Heavy-snow transform-based visualization and importance measure in the Seoul subway network (with Y. Kim and J. Kim), The Korean Data Analysis Society Summer Conference, Konkuk University, July 2025.
-- Graph Neural Network-based Anomaly Detection System (with B. Kim), The Korean Statistical Society Winter Conference, Sungshin Women's University, December 2023.
-- Capturing Solar Radiation Patterns with Advanced Neural Networks (with J. Lim, H. Jung, D. Im, J. Kim, and J. Hwang), The Korean Institute of Industrial Engineers Fall Conference, November 2023.
-- Anomaly Detection Method in Non-Euclidean Data using Empirical Bayes Threshold (with S. Choi), The Korean Statistical Society Winter Conference, Jeju National University, December 2022.
-- Hierarchical-CAM: CAM-based Hierarchical Visualization for Image Data (with H. Kim), The Korean Statistical Society Summer Conference, Seoul National University, June 2022.
-- Visualization of issue sensitivity based on the results of the election for the head of a regional organization in Korea (with T. Lee and H. Oh), The Korean Data & Information Science Society Spring Conference, Pusan National University, May 2022.
-- Multiscale Methodology for Graph Signals, The Korean Statistical Society Conference, Korea University, November 2021.
-- Heavy-Snow Transform: A New Multiscale Method for Time Series, The 5th Institute of Mathematical Statistics Asia Pacific Rim Meeting, National University of Singapore, June 2018.
-- Elastic-Band Transform: A New Approach to Multiscale Visualization, Joint Meeting of 10th Asian Regional Section (ARS) of the International Association for Statistical Computing (IASC) and the NZ Statistical Association (NZSA), The University of Auckland, December 2017.
-- Modified Variational Mode Decomposition using Ebayesthresh, The 4th Institute of Mathematical Statistics Asia Pacific Rim Meeting, The Chinese University of Hong Kong, June 2016.
-- Modification of VMD for Handling Missing Data, The Korean Statistical Society Conference, Chungbuk National University, August 2015.
+```{r}
+#| echo: false
+#| results: asis
+render_section(data$academic)
+```
 
-## 특강&세미나
+## Outreach
 
-- [통계 연구자를 위한 에이전틱 AI 활용법](https://miruetoto.github.io/cnu-260330), 충남대학교 DS세미나, 2026-03-30.
-- [통계 연구자를 위한 에이전틱 AI 활용법](https://miruetoto.github.io/agentic-260224/), 다중척도연구실 세미나, 2026-02-24.
-- [ChatGPT시대의 코딩공부](https://miruetoto.github.io/JBIG-20251201), JBIG 세미나, 2025-12-01.
-- [ChatGPT를 이용한 파이썬 실무](https://guebin.github.io/rda251022/1022.html), 농촌진흥청, 2025-10-22.
-- [AI 기반 데이터 사이언스](https://guebin.github.io/rda250723/qslides.html), 농촌진흥청, 2025-07-23.
-- [Exploring Multiscale Methods](https://guebin.github.io/unist0611/ppt.html), UNIST 인공지능대학원 세미나, 2025-06-11.
-
-## 기타
+```{r}
+#| echo: false
+#| results: asis
+render_section(data$seminar)
+```
 
 :::

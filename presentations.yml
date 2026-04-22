@@ -1,0 +1,123 @@
+academic:
+  - title: "gglite: A Lightweight and Intuitive R Package for Extending Graphic Grammar"
+    venue: "Workshop on Multiscale Methods"
+    location: "Seoul National University Siheung Campus"
+    date: "Jan 2026"
+    year: 2026
+    url: "https://miruetoto.github.io/gglite260110"
+
+  - title: "Elastic-Band Transform–Integrated Spatio-Temporal Graph Neural Networks for Solar Radiation Forecasting"
+    venue: "Workshop on Multiscale Methods"
+    location: "Seoul National University Siheung Campus"
+    date: "Jan 2026"
+    year: 2026
+    url: "https://miruetoto.github.io/ebtsolar260108"
+
+  - title: "Heavy-snow transform-based visualization and importance measure in the Seoul subway network"
+    authors: "Y. Kim and J. Kim"
+    venue: "Korean Data Analysis Society Summer Conference"
+    location: "Konkuk University"
+    date: "Jul 2025"
+    year: 2025
+
+  - title: "Graph Neural Network-based Anomaly Detection System"
+    authors: "B. Kim"
+    venue: "Korean Statistical Society Winter Conference"
+    location: "Sungshin Women's University"
+    date: "Dec 2023"
+    year: 2023
+
+  - title: "Capturing Solar Radiation Patterns with Advanced Neural Networks"
+    authors: "J. Lim, H. Jung, D. Im, J. Kim, and J. Hwang"
+    venue: "Korean Institute of Industrial Engineers Fall Conference"
+    date: "Nov 2023"
+    year: 2023
+
+  - title: "Anomaly Detection Method in Non-Euclidean Data using Empirical Bayes Threshold"
+    authors: "S. Choi"
+    venue: "Korean Statistical Society Winter Conference"
+    location: "Jeju National University"
+    date: "Dec 2022"
+    year: 2022
+
+  - title: "Hierarchical-CAM: CAM-based Hierarchical Visualization for Image Data"
+    authors: "H. Kim"
+    venue: "Korean Statistical Society Summer Conference"
+    location: "Seoul National University"
+    date: "Jun 2022"
+    year: 2022
+
+  - title: "Visualization of issue sensitivity based on the results of the election for the head of a regional organization in Korea"
+    authors: "T. Lee and H. Oh"
+    venue: "Korean Data & Information Science Society Spring Conference"
+    location: "Pusan National University"
+    date: "May 2022"
+    year: 2022
+
+  - title: "Multiscale Methodology for Graph Signals"
+    venue: "Korean Statistical Society Conference"
+    location: "Korea University"
+    date: "Nov 2021"
+    year: 2021
+
+  - title: "Heavy-Snow Transform: A New Multiscale Method for Time Series"
+    venue: "5th IMS Asia Pacific Rim Meeting"
+    location: "National University of Singapore"
+    date: "Jun 2018"
+    year: 2018
+
+  - title: "Elastic-Band Transform: A New Approach to Multiscale Visualization"
+    venue: "Joint Meeting of 10th IASC-ARS and NZSA"
+    location: "The University of Auckland"
+    date: "Dec 2017"
+    year: 2017
+
+  - title: "Modified Variational Mode Decomposition using Ebayesthresh"
+    venue: "4th IMS Asia Pacific Rim Meeting"
+    location: "The Chinese University of Hong Kong"
+    date: "Jun 2016"
+    year: 2016
+
+  - title: "Modification of VMD for Handling Missing Data"
+    venue: "Korean Statistical Society Conference"
+    location: "Chungbuk National University"
+    date: "Aug 2015"
+    year: 2015
+
+seminar:
+
+  - title: "통계 연구자를 위한 에이전틱 AI 활용법"
+    venue: "충남대학교 DS세미나"
+    date: "2026-03-30"
+    year: 2026
+    url: "https://miruetoto.github.io/cnu-260330"
+
+  - title: "통계 연구자를 위한 에이전틱 AI 활용법"
+    venue: "다중척도연구실 세미나"
+    date: "2026-02-24"
+    year: 2026
+    url: "https://miruetoto.github.io/agentic-260224/"
+
+  - title: "ChatGPT시대의 코딩공부"
+    venue: "JBIG 세미나"
+    date: "2025-12-01"
+    year: 2025
+    url: "https://miruetoto.github.io/JBIG-20251201"
+
+  - title: "ChatGPT를 이용한 파이썬 실무"
+    venue: "농촌진흥청"
+    date: "2025-10-22"
+    year: 2025
+    url: "https://guebin.github.io/rda251022/1022.html"
+
+  - title: "AI 기반 데이터 사이언스"
+    venue: "농촌진흥청"
+    date: "2025-07-23"
+    year: 2025
+    url: "https://guebin.github.io/rda250723/qslides.html"
+
+  - title: "Exploring Multiscale Methods"
+    venue: "UNIST 인공지능대학원 세미나"
+    date: "2025-06-11"
+    year: 2025
+    url: "https://guebin.github.io/unist0611/ppt.html"

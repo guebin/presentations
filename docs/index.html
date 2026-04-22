@@ -101,39 +101,273 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>전북대학교 통계학과 최규빈 교수의 발표자료 목록을 정리한 페이지입니다.</p>
+<style>
+  .year-header {
+    font-weight: 600;
+    color: #555;
+    margin: 20px 0 10px 0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .year-header:first-of-type {
+    margin-top: 4px;
+  }
+  .card {
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    transition: box-shadow 0.15s ease;
+  }
+  .card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .card-title {
+    font-weight: 600;
+    color: #0b5394;
+    margin-bottom: 4px;
+    line-height: 1.4;
+  }
+  .card-meta {
+    color: #666;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+  }
+  .card-meta .sep { color: #bbb; }
+  .authors {
+    color: #888;
+    font-style: italic;
+    margin-bottom: 3px;
+  }
+  a.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.8em;
+    padding: 2px 9px;
+    border-radius: 10px;
+    background: #eef3fb;
+    color: #1a5490;
+    font-weight: 500;
+    margin-left: 8px;
+    vertical-align: middle;
+    text-decoration: none;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  a.tag:hover { background: #1a5490; color: white; }
+  a.tag svg { width: 0.85em; height: 0.85em; fill: currentColor; }
+</style>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">연구</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">특강&amp;세미나</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">기타</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Research</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Outreach</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<ul>
-<li><a href="https://miruetoto.github.io/gglite260110">gglite: A Lightweight and Intuitive R Package for Extending Graphic Grammar</a>, Multiscale Methodology Workshop, Seoul National University Siheung Campus, January 2026.</li>
-<li><a href="https://miruetoto.github.io/ebtsolar260108">Elastic-Band Transform–Integrated Spatio-Temporal Graph Neural Networks for Solar Radiation Forecasting</a>, Multiscale Methodology Workshop, Seoul National University Siheung Campus, January 2026.</li>
-<li>Heavy-snow transform-based visualization and importance measure in the Seoul subway network (with Y. Kim and J. Kim), The Korean Data Analysis Society Summer Conference, Konkuk University, July 2025.</li>
-<li>Graph Neural Network-based Anomaly Detection System (with B. Kim), The Korean Statistical Society Winter Conference, Sungshin Women’s University, December 2023.</li>
-<li>Capturing Solar Radiation Patterns with Advanced Neural Networks (with J. Lim, H. Jung, D. Im, J. Kim, and J. Hwang), The Korean Institute of Industrial Engineers Fall Conference, November 2023.</li>
-<li>Anomaly Detection Method in Non-Euclidean Data using Empirical Bayes Threshold (with S. Choi), The Korean Statistical Society Winter Conference, Jeju National University, December 2022.</li>
-<li>Hierarchical-CAM: CAM-based Hierarchical Visualization for Image Data (with H. Kim), The Korean Statistical Society Summer Conference, Seoul National University, June 2022.</li>
-<li>Visualization of issue sensitivity based on the results of the election for the head of a regional organization in Korea (with T. Lee and H. Oh), The Korean Data &amp; Information Science Society Spring Conference, Pusan National University, May 2022.</li>
-<li>Multiscale Methodology for Graph Signals, The Korean Statistical Society Conference, Korea University, November 2021.</li>
-<li>Heavy-Snow Transform: A New Multiscale Method for Time Series, The 5th Institute of Mathematical Statistics Asia Pacific Rim Meeting, National University of Singapore, June 2018.</li>
-<li>Elastic-Band Transform: A New Approach to Multiscale Visualization, Joint Meeting of 10th Asian Regional Section (ARS) of the International Association for Statistical Computing (IASC) and the NZ Statistical Association (NZSA), The University of Auckland, December 2017.</li>
-<li>Modified Variational Mode Decomposition using Ebayesthresh, The 4th Institute of Mathematical Statistics Asia Pacific Rim Meeting, The Chinese University of Hong Kong, June 2016.</li>
-<li>Modification of VMD for Handling Missing Data, The Korean Statistical Society Conference, Chungbuk National University, August 2015.</li>
-</ul>
+<div class="year-header">
+2026
+</div>
+<div class="card">
+<div class="card-title">
+gglite: A Lightweight and Intuitive R Package for Extending Graphic Grammar <a href="https://miruetoto.github.io/gglite260110" class="tag" target="_blank" rel="noopener"><svg viewbox="0 0 16 16"><path d="M2 3h12v8H2V3zm1 1v6h10V4H3zm4 8h2v1h3v1H4v-1h3v-1z"></path></svg> slides</a>
+</div>
+<div class="card-meta">
+<span>Workshop on Multiscale Methods</span><span class="sep">·</span><span>Seoul National University Siheung Campus</span><span class="sep">·</span><span>Jan 2026</span>
+</div>
+</div>
+<div class="card">
+<div class="card-title">
+Elastic-Band Transform–Integrated Spatio-Temporal Graph Neural Networks for Solar Radiation Forecasting <a href="https://miruetoto.github.io/ebtsolar260108" class="tag" target="_blank" rel="noopener"><svg viewbox="0 0 16 16"><path d="M2 3h12v8H2V3zm1 1v6h10V4H3zm4 8h2v1h3v1H4v-1h3v-1z"></path></svg> slides</a>
+</div>
+<div class="card-meta">
+<span>Workshop on Multiscale Methods</span><span class="sep">·</span><span>Seoul National University Siheung Campus</span><span class="sep">·</span><span>Jan 2026</span>
+</div>
+</div>
+<div class="year-header">
+2025
+</div>
+<div class="card">
+<div class="card-title">
+Heavy-snow transform-based visualization and importance measure in the Seoul subway network
+</div>
+<div class="authors">
+with Y. Kim and J. Kim
+</div>
+<div class="card-meta">
+<span>Korean Data Analysis Society Summer Conference</span><span class="sep">·</span><span>Konkuk University</span><span class="sep">·</span><span>Jul 2025</span>
+</div>
+</div>
+<div class="year-header">
+2023
+</div>
+<div class="card">
+<div class="card-title">
+Graph Neural Network-based Anomaly Detection System
+</div>
+<div class="authors">
+with B. Kim
+</div>
+<div class="card-meta">
+<span>Korean Statistical Society Winter Conference</span><span class="sep">·</span><span>Sungshin Women’s University</span><span class="sep">·</span><span>Dec 2023</span>
+</div>
+</div>
+<div class="card">
+<div class="card-title">
+Capturing Solar Radiation Patterns with Advanced Neural Networks
+</div>
+<div class="authors">
+with J. Lim, H. Jung, D. Im, J. Kim, and J. Hwang
+</div>
+<div class="card-meta">
+<span>Korean Institute of Industrial Engineers Fall Conference</span><span class="sep">·</span><span>Nov 2023</span>
+</div>
+</div>
+<div class="year-header">
+2022
+</div>
+<div class="card">
+<div class="card-title">
+Anomaly Detection Method in Non-Euclidean Data using Empirical Bayes Threshold
+</div>
+<div class="authors">
+with S. Choi
+</div>
+<div class="card-meta">
+<span>Korean Statistical Society Winter Conference</span><span class="sep">·</span><span>Jeju National University</span><span class="sep">·</span><span>Dec 2022</span>
+</div>
+</div>
+<div class="card">
+<div class="card-title">
+Hierarchical-CAM: CAM-based Hierarchical Visualization for Image Data
+</div>
+<div class="authors">
+with H. Kim
+</div>
+<div class="card-meta">
+<span>Korean Statistical Society Summer Conference</span><span class="sep">·</span><span>Seoul National University</span><span class="sep">·</span><span>Jun 2022</span>
+</div>
+</div>
+<div class="card">
+<div class="card-title">
+Visualization of issue sensitivity based on the results of the election for the head of a regional organization in Korea
+</div>
+<div class="authors">
+with T. Lee and H. Oh
+</div>
+<div class="card-meta">
+<span>Korean Data &amp; Information Science Society Spring Conference</span><span class="sep">·</span><span>Pusan National University</span><span class="sep">·</span><span>May 2022</span>
+</div>
+</div>
+<div class="year-header">
+2021
+</div>
+<div class="card">
+<div class="card-title">
+Multiscale Methodology for Graph Signals
+</div>
+<div class="card-meta">
+<span>Korean Statistical Society Conference</span><span class="sep">·</span><span>Korea University</span><span class="sep">·</span><span>Nov 2021</span>
+</div>
+</div>
+<div class="year-header">
+2018
+</div>
+<div class="card">
+<div class="card-title">
+Heavy-Snow Transform: A New Multiscale Method for Time Series
+</div>
+<div class="card-meta">
+<span>5th IMS Asia Pacific Rim Meeting</span><span class="sep">·</span><span>National University of Singapore</span><span class="sep">·</span><span>Jun 2018</span>
+</div>
+</div>
+<div class="year-header">
+2017
+</div>
+<div class="card">
+<div class="card-title">
+Elastic-Band Transform: A New Approach to Multiscale Visualization
+</div>
+<div class="card-meta">
+<span>Joint Meeting of 10th IASC-ARS and NZSA</span><span class="sep">·</span><span>The University of Auckland</span><span class="sep">·</span><span>Dec 2017</span>
+</div>
+</div>
+<div class="year-header">
+2016
+</div>
+<div class="card">
+<div class="card-title">
+Modified Variational Mode Decomposition using Ebayesthresh
+</div>
+<div class="card-meta">
+<span>4th IMS Asia Pacific Rim Meeting</span><span class="sep">·</span><span>The Chinese University of Hong Kong</span><span class="sep">·</span><span>Jun 2016</span>
+</div>
+</div>
+<div class="year-header">
+2015
+</div>
+<div class="card">
+<div class="card-title">
+Modification of VMD for Handling Missing Data
+</div>
+<div class="card-meta">
+<span>Korean Statistical Society Conference</span><span class="sep">·</span><span>Chungbuk National University</span><span class="sep">·</span><span>Aug 2015</span>
+</div>
+</div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<ul>
-<li><a href="https://miruetoto.github.io/cnu-260330">통계 연구자를 위한 에이전틱 AI 활용법</a>, 충남대학교 DS세미나, 2026-03-30.</li>
-<li><a href="https://miruetoto.github.io/agentic-260224/">통계 연구자를 위한 에이전틱 AI 활용법</a>, 다중척도연구실 세미나, 2026-02-24.</li>
-<li><a href="https://miruetoto.github.io/JBIG-20251201">ChatGPT시대의 코딩공부</a>, JBIG 세미나, 2025-12-01.</li>
-<li><a href="https://guebin.github.io/rda251022/1022.html">ChatGPT를 이용한 파이썬 실무</a>, 농촌진흥청, 2025-10-22.</li>
-<li><a href="https://guebin.github.io/rda250723/qslides.html">AI 기반 데이터 사이언스</a>, 농촌진흥청, 2025-07-23.</li>
-<li><a href="https://guebin.github.io/unist0611/ppt.html">Exploring Multiscale Methods</a>, UNIST 인공지능대학원 세미나, 2025-06-11.</li>
-</ul>
+<div class="year-header">
+2026
 </div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-
+<div class="card">
+<div class="card-title">
+통계 연구자를 위한 에이전틱 AI 활용법 <a href="https://miruetoto.github.io/cnu-260330" class="tag" target="_blank" rel="noopener"><svg viewbox="0 0 16 16"><path d="M2 3h12v8H2V3zm1 1v6h10V4H3zm4 8h2v1h3v1H4v-1h3v-1z"></path></svg> slides</a>
+</div>
+<div class="card-meta">
+<span>충남대학교 DS세미나</span><span class="sep">·</span><span>2026-03-30</span>
+</div>
+</div>
+<div class="card">
+<div class="card-title">
+통계 연구자를 위한 에이전틱 AI 활용법 <a href="https://miruetoto.github.io/agentic-260224/" class="tag" target="_blank" rel="noopener"><svg viewbox="0 0 16 16"><path d="M2 3h12v8H2V3zm1 1v6h10V4H3zm4 8h2v1h3v1H4v-1h3v-1z"></path></svg> slides</a>
+</div>
+<div class="card-meta">
+<span>다중척도연구실 세미나</span><span class="sep">·</span><span>2026-02-24</span>
+</div>
+</div>
+<div class="year-header">
+2025
+</div>
+<div class="card">
+<div class="card-title">
+ChatGPT시대의 코딩공부 <a href="https://miruetoto.github.io/JBIG-20251201" class="tag" target="_blank" rel="noopener"><svg viewbox="0 0 16 16"><path d="M2 3h12v8H2V3zm1 1v6h10V4H3zm4 8h2v1h3v1H4v-1h3v-1z"></path></svg> slides</a>
+</div>
+<div class="card-meta">
+<span>JBIG 세미나</span><span class="sep">·</span><span>2025-12-01</span>
+</div>
+</div>
+<div class="card">
+<div class="card-title">
+ChatGPT를 이용한 파이썬 실무 <a href="https://guebin.github.io/rda251022/1022.html" class="tag" target="_blank" rel="noopener"><svg viewbox="0 0 16 16"><path d="M2 3h12v8H2V3zm1 1v6h10V4H3zm4 8h2v1h3v1H4v-1h3v-1z"></path></svg> slides</a>
+</div>
+<div class="card-meta">
+<span>농촌진흥청</span><span class="sep">·</span><span>2025-10-22</span>
+</div>
+</div>
+<div class="card">
+<div class="card-title">
+AI 기반 데이터 사이언스 <a href="https://guebin.github.io/rda250723/qslides.html" class="tag" target="_blank" rel="noopener"><svg viewbox="0 0 16 16"><path d="M2 3h12v8H2V3zm1 1v6h10V4H3zm4 8h2v1h3v1H4v-1h3v-1z"></path></svg> slides</a>
+</div>
+<div class="card-meta">
+<span>농촌진흥청</span><span class="sep">·</span><span>2025-07-23</span>
+</div>
+</div>
+<div class="card">
+<div class="card-title">
+Exploring Multiscale Methods <a href="https://guebin.github.io/unist0611/ppt.html" class="tag" target="_blank" rel="noopener"><svg viewbox="0 0 16 16"><path d="M2 3h12v8H2V3zm1 1v6h10V4H3zm4 8h2v1h3v1H4v-1h3v-1z"></path></svg> slides</a>
+</div>
+<div class="card-meta">
+<span>UNIST 인공지능대학원 세미나</span><span class="sep">·</span><span>2025-06-11</span>
+</div>
+</div>
 </div>
 </div>
 </div>
