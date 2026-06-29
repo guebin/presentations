@@ -91,6 +91,7 @@ seminar:
     location: "삼성생명빌딩 대연수실"
     date: "2026-05-29"
     year: 2026
+    url: "https://guebin.github.io/aia260529/vibe.html"
 
   - title: "에이전틱 AI 워크플로우 실습: 통계연구자를 위한 비디오 가이드"
     venue: "충남대학교 DS세미나"
