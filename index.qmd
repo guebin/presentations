@@ -120,7 +120,7 @@ render_section <- function(items) {
 render_section(data$academic)
 ```
 
-## Outreach
+## General
 
 ```{r}
 #| echo: false
